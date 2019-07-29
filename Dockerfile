@@ -9,8 +9,6 @@ ENV KEYCLOAK_USER admin
 ENV KEYCLOAK_PASSWORD admin
 
 COPY webauthn4j-ear/target/keycloak-webauthn4j-ear-*.ear /opt/jboss/keycloak/standalone/deployments
-# COPY hypersign-config.ftl /opt/jboss/keycloak/themes/base/login
-# COPY hypersign.ftl /opt/jboss/keycloak/themes/base/login
 
 EXPOSE 8080
 
